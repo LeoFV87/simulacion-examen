@@ -19,6 +19,7 @@ jobs:
     # DEFECTO DEL RETO 3:
     # Falta 'needs: build-test' para bloquear la ejecucion si fallan las pruebas.
     # CORRECCION: Descomentar o agregar 'needs: build-test'.
+    needs: build-test
     runs-on: ubuntu-latest
     steps:
       - run: echo "Simulando despliegue de la imagen..."
